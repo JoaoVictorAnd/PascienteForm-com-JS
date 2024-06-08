@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pasciente</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.1.0/vanilla-masker.min.js"></script>
+</head>
+<body>
+    <section class="formulario">
+        <div class="formulario__formulario">
+            <h2>Formulário de Cadastro de Pasciente</h2>
+            <form method="post">
+                <label  for="nome">Nome</label>
+                <input class="dados tamanho__caixa__nome" type="text" id="nome" name="nome" maxlength="50" placeholder="Digite o nome do pasciente" required>
+                <br>
+
+                <p>Sexo:</p>
+                <input class="dados" type="radio" id="sexo_m" name="sexo" value="Maculino">
+                <label for="sexo_m">Masculino</label>
+                <input class="dados" type="radio" id="sexo_f" name="sexo" value="Feminino">
+                <label for="sexo_f">Feminino</label>
+                <input class="dados" class="dados" type="radio" id="sexo_n" name="sexo" value="Nenhum">
+                <label  for="sexo_n">Prefiro não responder</label>
+                <br>
+
+                <p>Genêro:</p>
+                <input class="dados" type="radio" id="sexo_mas" name="sexo_2" value="Maculino_2">
+                <label for="sexo_mas">Masculino</label>
+                <input class="dados" type="radio" id="sexo_fem" name="sexo_2" value="Feminino_2">
+                <label for="sexo_fem">Feminino</label>
+                <input class="dados" type="radio" id="outro" name="sexo_2" value="Outros">
+                <label for="outro">Outros</label>
+                <input class="dados" type="radio" id="nenhum" name="sexo_2" value="nenhum">
+                <label  for="nenhum">Nenhum</label>
+                <br>
+
+                <label for="rg">R.G.</label>
+                <input class="dados tamanho__caixa__rg" type="text" id="rg" name="rg" placeholder="Digite o R.G. do pasciente" pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[0-9]{1,2}" required>
+                <br>
+
+                <label for="cns">CNS</label>
+                <input class="dados tamanho__caixa__cns" type="text" id="cns" name="cns" placeholder="Digite o Cartão SUS do pasciente" pattern="[0-9]{12}" required>
+                <br>
+
+                <label for="datanasc">Data de Nacimento</label>
+                <input class="dados" type="date" id="datanasc" name="datanasc" required>
+                <br>
+
+                <label for="fone">Telefone</label>
+                <input class="dados tamanho__caixa__telefone" type="tel" id="fone" attrname="fone" required placeholder="+55 (11) 99999-9999">
+                <br>
+
+                <label for="nome_mae">Nome da Mãe</label>
+                <input class="dados tamanho__caixa__mae" type="text" id="nome_mae" name="nome_mae" maxlength="50" placeholder="Digite o nome da mãe do pasciente" required>
+                <br>
+
+                <label>Cep:
+                <input class="dados tamanho__caixa__cep" name="cep" type="text" id="cep" class="mascCEP" value="" size="10" maxlength="9" required onblur="procuraCep(this.value);">
+                </label><br>
+                
+                <label>Endereço:
+                <input class="dados tamanho__caixa__endereco" name="endereco" type="text" id="endereco" disabled></label>
+                <br>
+                <label>Número:
+                <input class="dados tamanho__caixa__numero" name="numero" type="number" id="numero" maxlength="5" ></label>
+                <label>Complemento:
+                <input class="dados tamanho__caixa__complemento" name="complemento" type="text" id="complemento" maxlength="10"></label>
+                <br>
+                <label>Bairro:
+                <input class="dados tamanho__caixa__bairro" name="bairro" type="text" id="bairro" disabled></label>
+                <br>
+                <label>Cidade:
+                <input class="dados tamanho__caixa__cidade" name="cidade" type="text" id="cidade" disabled></label>
+                <br>
+                <label>Estado:
+                <input class="dados tamanho__caixa__estado" name="uf" type="text" id="uf" disabled></label>
+                <br>
+                
+                <label for="email">Email</label>
+                <input class="dados tamanho__caixa__email" type='email' id='email' name='email' required>
+                <br>
+
+                <label for="doenca">Doenças</label>
+                <select class="dados" name="doenca" id="doenca">
+                    <option value="nenhuma">Nenhuma</option>
+                    <option value="nefrite">Nefrite</option>
+                    <option value="conhutivite">Conjutivite</option>
+                    <option value="rinite">Rinite</option>
+                    <option value="asma">Asma</option>
+                    <option value="tendinite">Tendinite</option>
+                </select>
+                <br>
+
+                <input class="botao" type="reset" value="Reset">
+                <input class="botao" type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

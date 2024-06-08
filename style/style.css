@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#3D5A73;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+.formulario__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    width: 450px;
+    height: 590px;
+    padding: 35px;
+    gap: 40px;
+}
+
+.dados {
+
+    margin-bottom: 10px;
+}
+
+.tamanho__caixa__nome{
+    width: 360px;
+    /* border: none;
+    outline: none; */
+}
+
+.tamanho__caixa__rg{
+    width: 365px;
+}
+
+.tamanho__caixa__cns {
+    width: 364px;
+}
+
+.tamanho__caixa__numero{
+    width: 110px !important;
+}
+
+.tamanho__caixa__complemento{
+    width: 109px !important;
+}
+
+.tamanho__caixa__telefone {
+    width: 338px;
+}
+
+.tamanho__caixa__mae{
+    width: 298px;
+}
+
+.tamanho__caixa__cep{
+    width: 364px;
+}
+
+.tamanho__caixa__endereco {
+    width: 325px;
+}
+
+.tamanho__caixa__bairro{
+    width: 350px;
+}
+
+.tamanho__caixa__cidade{
+    width: 342px;
+}
+
+.tamanho__caixa__estado {
+    width: 342px;
+}
+
+.tamanho__caixa__email {
+    width: 356px;
+}
+.botao {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    width: 50px;
+}
+
+.botao:hover{
+    background-color: #808080;
+    color: white;
+}
